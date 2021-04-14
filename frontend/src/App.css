@@ -1,0 +1,93 @@
+* {box-sizing:border-box;
+    --dark-blue: #161B33;}
+
+.App{
+    height: 100vh;
+    width: 100vw;
+    white-space: pre-wrap;
+    color: white;
+}
+.form-text-input{
+    background: none;
+    border-style: solid;
+    border-width: 0pt 0pt 0.01em 0pt;
+    border-color: rgba(255,255,255,0.6);
+    outline: none;
+    color: white;
+    text-underline-position: none;
+}
+.form-submit-button{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .App{
+        padding: 10px 20px 0px 20px;
+    }
+    header{
+        width: 75vw;
+    }
+    .form-text-input{
+        margin-top: 0.5em;
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: lighter;
+        font-size: 1.3em;
+    }
+    .opening-page-title{
+        margin: 0;
+        font-family: "Manrope", sans-serif;
+        font-size: 3.5em;
+      }
+    
+    .opening-page-subtitle{
+        font-family: "Roboto Slab";
+        font-weight: lighter;
+        font-size: 1em;
+    }
+    .word-details-container{
+        position: relative;
+        height: max-content;
+        overflow-y: scroll;
+
+    }
+    .definition{
+        position: relative;
+        flex: 0 0 100%;
+        width: 100vw;
+        margin-right: 15px;
+    }
+    .definition-selector-container{
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        background: var(--dark-blue);
+        padding: auto auto 20px auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    } 
+    .btn-change-definition{
+        width: 80px;
+        background: none;
+        border: none;
+        color: white;
+        text-decoration: underline;
+        text-align: center;
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 1rem;
+        margin: auto 5px auto 5px;
+        outline: none;
+    }
+    .off{
+        visibility: hidden;
+    }
+    #definition-of{
+        margin: auto 0 auto 0;
+        text-align: center;
+        font-family: "Manrope", sans-serif;
+        font-size: 1rem;
+    }
+}
+
